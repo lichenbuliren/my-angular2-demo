@@ -1,0 +1,7 @@
+<ul *ngIf="demos">
+    <li *ngFor="let item of demos">
+        <a routerLink="{{item.link}}">{{item.name}}</a>
+    </li>
+</ul>
+
+<router-outlet></router-outlet>
