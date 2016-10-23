@@ -1,7 +1,9 @@
+<h1>{{title}}</h1>
 <ul *ngIf="demos">
     <li *ngFor="let item of demos">
         <a routerLink="{{item.link}}">{{item.name}}</a>
     </li>
 </ul>
 
+<my-swiper [slides]="slideImages"></my-swiper>
 <router-outlet></router-outlet>
